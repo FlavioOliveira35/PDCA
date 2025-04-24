@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema PDCA Toyota A3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <div class="logo">
+                <img src="img/pdca-cycle.svg" alt="PDCA Logo" class="logo-img">
+                <h1>Sistema PDCA</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active" data-page="home"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#" data-page="plan"><i class="fas fa-clipboard-list"></i> Plan</a></li>
+                    <li><a href="#" data-page="do"><i class="fas fa-play"></i> Do</a></li>
+                    <li><a href="#" data-page="check"><i class="fas fa-check-circle"></i> Check</a></li>
+                    <li><a href="#" data-page="act"><i class="fas fa-sync-alt"></i> Act</a></li>
+                    <li><a href="#" data-page="dashboard"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <div class="user-profile">
+                    <img src="img/user-avatar.png" alt="Avatar" class="avatar">
+                    <span class="username">João Silva</span>
+                </div>
+                <div class="dropdown-menu">
+                    <a href="#"><i class="fas fa-user"></i> Perfil</a>
+                    <a href="#"><i class="fas fa-cog"></i> Configurações</a>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Assistente IA -->
+            <div class="ai-assistant">
+                <div class="ai-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="ai-content">
+                    <div class="ai-message">
+                        Bem-vindo ao sistema PDCA! Aqui você pode criar e gerenciar seus projetos de melhoria contínua. Como posso ajudar?
+                    </div>
+                    <div class="ai-actions">
+                        <button class="ai-action"><i class="fas fa-lightbulb"></i> Dicas</button>
+                        <button class="ai-action"><i class="fas fa-question-circle"></i> Ajuda</button>
+                        <button class="ai-action"><i class="fas fa-times"></i> Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Página Inicial -->
+            <section id="home" class="page active">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h2>Gerencie seus projetos de melhoria contínua</h2>
+                        <p>O Sistema PDCA é uma ferramenta poderosa baseada no modelo A3 da Toyota para resolução de problemas e melhoria contínua.</p>
+                        <button class="btn-primary new-pdca-btn"><i class="fas fa-plus"></i> Novo PDCA</button>
+                    </div>
+                    <div class="hero-image">
+                        <img src="img/pdca-cycle.svg" alt="Ciclo PDCA">
+                    </div>
+                </div>
+
+                <div class="recent-pdca">
+                    <h3>PDCAs Recentes</h3>
+                    <div class="pdca-list">
+                        <!-- PDCAs recentes serão carregados aqui -->
+                    </div>
+                </div>
+
+                <div class="features">
+                    <h3>Recursos do Sistema</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon plan">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h4>Plan (Planejar)</h4>
+                            <p>Identifique problemas, analise a situação atual e determine as causas raiz.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon do">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <h4>Do (Executar)</h4>
+                            <p>Implemente as contramedidas planejadas com ações claras e responsáveis definidos.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h4>Check (Verificar)</h4>
+                            <p>Avalie os resultados das ações implementadas e compare com os objetivos.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon act">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h4>Act (Agir)</h4>
+                            <p>Padronize as melhorias bem-sucedidas ou inicie um novo ciclo PDCA.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Multiusuário</h4>
+                            <p>Compartilhe seus PDCAs com outros usuários e trabalhe em equipe.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h4>Dashboard</h4>
+                            <p>Visualize todos os seus PDCAs e acompanhe o progresso de cada um.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <p>&copy; 2025 Sistema PDCA. Todos os direitos reservados.</p>
+                </footer>
+            </section>
+
+            <!-- Página Plan -->
+            <section id="plan" class="page">
+                <h2>Plan (Planejar)</h2>
+                <p class="page-description">Nesta etapa, você deve identificar o problema, analisar a situação atual e determinar as causas raiz.</p>
+
+                <div class="form-section">
+                    <h3>Descrição do Problema</h3>
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <label for="problem-description">Qual é o problema?</label>
+                            <textarea id="problem-description" placeholder="Descreva o problema de forma clara e objetiva..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="problem-importance">Por que este problema é importante?</label>
+                            <textarea id="problem-importance" placeholder="Explique a importância e o impacto deste problema..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="problem-context">Contexto do problema</label>
+                            <textarea id="problem-context" placeholder="Descreva o contexto em que o problema ocorre..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-section">
+                    <h3>Situação Atual</h3>
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <label for="current-indicators">Indicadores atuais</label>
+                            <textarea id="current-indicators" placeholder="Descreva os indicadores que mostram a situação atual..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="specific-objectives">Objetivos específicos</label>
+                            <textarea id="specific-objectives" placeholder="Defina objetivos específicos, mensuráveis, atingíveis, relevantes e com prazo..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-section">
+                    <h3>Análise de Causas</h3>
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <label for="potential-causes">Potenciais causas</label>
+                            <textarea id="potential-causes" placeholder="Liste as possíveis causas do problema..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="root-causes">Causas raiz</label>
+                            <textarea id="root-causes" placeholder="Identifique as causas raiz do problema..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn-secondary"><i class="fas fa-plus"></i> Adicionar Diagrama de Ishikawa</button>
+                            <button type="button" class="btn-secondary"><i class="fas fa-plus"></i> Adicionar 5 Porquês</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn-secondary prev-step" data-prev="home"><i class="fas fa-arrow-left"></i> Voltar</button>
+                    <button class="btn-primary next-step" data-next="do">Próximo <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Página Do -->
+            <section id="do" class="page">
+                <h2>Do (Executar)</h2>
+                <p class="page-description">Nesta etapa, você deve implementar as contramedidas planejadas para resolver o problema.</p>
+
+                <div class="form-section">
+                    <h3>Contramedidas</h3>
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <label for="countermeasures">Quais contramedidas serão implementadas?</label>
+                            <textarea id="countermeasures" placeholder="Descreva as contramedidas que serão implementadas para resolver o problema..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-section">
+                    <h3>Plano de Ação</h3>
+                    <form class="pdca-form">
+                        <div class="table-container">
+                            <table class="action-plan-table">
+                                <thead>
+                                    <tr>
+                                        <th>O quê</th>
+                                        <th>Por quê</th>
+                                        <th>Onde</th>
+                                        <th>Quando</th>
+                                        <th>Quem</th>
+                                        <th>Como</th>
+                                        <th>Quanto</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="action-plan-items">
+                                    <!-- Itens do plano de ação serão adicionados aqui -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn-secondary add-action-item"><i class="fas fa-plus"></i> Adicionar Ação</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn-secondary prev-step" data-prev="plan"><i class="fas fa-arrow-left"></i> Voltar</button>
+                    <button class="btn-primary next-step" data-next="check">Próximo <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Página Check -->
+            <section id="check" class="page">
+                <h2>Check (Verificar)</h2>
+                <p class="page-description">Nesta etapa, você deve verificar os resultados das contramedidas implementadas.</p>
+
+                <div class="form-section">
+                    <h3>Resultados</h3>
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <label for="implemented-countermeasures">Resultados das contramedidas implementadas</label>
+                            <textarea id="implemented-countermeasures" placeholder="Descreva os resultados obtidos com as contramedidas implementadas..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="indicator-evolution">Evolução dos indicadores</label>
+                            <textarea id="indicator-evolution" placeholder="Descreva como os indicadores evoluíram após a implementação das contramedidas..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="objective-achievement">Atingimento dos objetivos</label>
+                            <textarea id="objective-achievement" placeholder="Avalie se os objetivos foram atingidos e em que medida..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-section">
+                    <h3>Evidências</h3>
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <button type="button" class="btn-secondary"><i class="fas fa-plus"></i> Adicionar Gráfico</button>
+                            <button type="button" class="btn-secondary"><i class="fas fa-plus"></i> Adicionar Imagem</button>
+                            <button type="button" class="btn-secondary"><i class="fas fa-plus"></i> Adicionar Documento</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn-secondary prev-step" data-prev="do"><i class="fas fa-arrow-left"></i> Voltar</button>
+                    <button class="btn-primary next-step" data-next="act">Próximo <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Página Act -->
+            <section id="act" class="page">
+                <h2>Act (Agir)</h2>
+                <p class="page-description">Nesta etapa, você deve padronizar as melhorias bem-sucedidas ou iniciar um novo ciclo PDCA.</p>
+
+                <div class="form-section">
+                    <h3>Ações Adicionais</h3>
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <label for="additional-measures">Medidas adicionais necessárias</label>
+                            <textarea id="additional-measures" placeholder="Descreva as medidas adicionais necessárias para resolver completamente o problema..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-section">
+                    <h3>Padronização</h3>
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <label for="standardization">Como as melhorias serão padronizadas?</label>
+                            <textarea id="standardization" placeholder="Descreva como as melhorias bem-sucedidas serão padronizadas..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-section">
+                    <h3>Próximo Ciclo</h3>
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <label for="next-a3">Próximo A3</label>
+                            <textarea id="next-a3" placeholder="Descreva o próximo ciclo PDCA, se necessário..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Decisão sobre o ciclo</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="standardize" name="cycle-decision" value="standardize">
+                                    <label for="standardize">Padronizar melhorias</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="new-cycle" name="cycle-decision" value="new-cycle">
+                                    <label for="new-cycle">Iniciar novo ciclo</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn-secondary prev-step" data-prev="check"><i class="fas fa-arrow-left"></i> Voltar</button>
+                    <button class="btn-primary complete-pdca">Concluir PDCA</button>
+                </div>
+            </section>
+
+            <!-- Página Dashboard -->
+            <section id="dashboard" class="page">
+                <h2>Dashboard</h2>
+                <p class="page-description">Visualize e gerencie todos os seus PDCAs.</p>
+
+                <div class="dashboard-header">
+                    <div class="dashboard-filters">
+                        <div class="filter-group">
+                            <label for="filter-status">Status:</label>
+                            <select id="filter-status">
+                                <option value="all">Todos</option>
+                                <option value="planning">Planejamento</option>
+                                <option value="in-progress">Em andamento</option>
+                                <option value="verification">Verificação</option>
+                                <option value="action">Ação</option>
+                                <option value="completed">Concluído</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="filter-user">Usuário:</label>
+                            <select id="filter-user">
+                                <option value="all">Todos</option>
+                                <option value="me">Meus PDCAs</option>
+                                <option value="shared">Compartilhados comigo</option>
+                            </select>
+                        </div>
+                        <div class="search-group">
+                            <input type="text" id="search-pdca" placeholder="Pesquisar PDCAs...">
+                            <button id="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="dashboard-actions">
+                        <button class="btn-primary new-pdca-btn"><i class="fas fa-plus"></i> Novo PDCA</button>
+                    </div>
+                </div>
+
+                <div class="dashboard-summary">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h4>Total de PDCAs</h4>
+                            <div class="summary-value">3</div>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h4>Em Andamento</h4>
+                            <div class="summary-value">2</div>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h4>Concluídos</h4>
+                            <div class="summary-value">1</div>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h4>Usuários Ativos</h4>
+                            <div class="summary-value">5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-charts">
+                    <div class="chart-container">
+                        <h3>PDCAs por Status</h3>
+                        <canvas id="status-chart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3>PDCAs por Usuário</h3>
+                        <canvas id="user-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="dashboard-table-container">
+                    <h3>Lista de PDCAs</h3>
+                    <div class="table-container">
+                        <table class="dashboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Título</th>
+                                    <th>Criado por</th>
+                                    <th>Data de criação</th>
+                                    <th>Última atualização</th>
+                                    <th>Status</th>
+                                    <th>Progresso</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- PDCAs serão carregados aqui -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modais -->
+        <div class="modal" id="new-pdca-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Novo PDCA</h3>
+                    <button class="modal-close"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <form class="pdca-form">
+                        <div class="form-group">
+                            <label for="pdca-title">Título</label>
+                            <input type="text" id="pdca-title" placeholder="Digite o título do PDCA...">
+                        </div>
+                        <div class="form-group">
+                            <label for="pdca-description">Descrição</label>
+                            <textarea id="pdca-description" placeholder="Descreva o objetivo deste PDCA..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="pdca-team">Equipe</label>
+                            <select id="pdca-team" multiple>
+                                <option value="user2">Maria Oliveira</option>
+                                <option value="user3">Carlos Santos</option>
+                                <option value="user4">Ana Pereira</option>
+                                <option value="user5">Pedro Costa</option>
+                            </select>
+                            <p class="help-text">Segure Ctrl para selecionar múltiplos usuários</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="pdca-deadline">Prazo</label>
+                            <input type="date" id="pdca-deadline">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-secondary modal-cancel">Cancelar</button>
+                    <button class="btn-primary modal-create">Criar PDCA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="navigation.js"></script>
+    <script src="multiuser.js"></script>
+    <script src="public-dashboard.js"></script>
+    <script src="integration.js"></script>
+</body>
+</html>
